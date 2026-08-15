@@ -99,6 +99,7 @@ export default async function BlogPostPage({ searchParams }: Props) {
                   <div className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
                     {post.coverImage ? (
                       <>
+                        <Link href={`/blog-post/${post.slug}`} className="absolute inset-0 z-10" aria-label={`Read ${post.title}`} tabIndex={-1} />
                         <Image
                           src={post.coverImage}
                           alt={post.title}
@@ -125,12 +126,12 @@ export default async function BlogPostPage({ searchParams }: Props) {
                         )}
                       </>
                     ) : (
-                      <div className="flex h-full items-center justify-center">
+                      <Link href={`/blog-post/${post.slug}`} className="flex h-full items-center justify-center" aria-label={`Read ${post.title}`}>
                         <div className="text-center">
                           <Tag className="mx-auto h-12 w-12 text-blue-400" strokeWidth={1.5} />
                           <p className="mt-2 text-sm text-blue-600">Featured Image</p>
                         </div>
-                      </div>
+                      </Link>
                     )}
                     {post.categories && post.categories.length > 0 && (
                       <div className="absolute left-3 top-3">

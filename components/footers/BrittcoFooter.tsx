@@ -48,7 +48,7 @@ export default function BrittcoFooter() {
               href="https://www.linkedin.com/company/brittco-consulting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 backdrop-blur transition-colors hover:bg-white/20"
+              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
               aria-label="LinkedIn"
             >
               <LinkedinIcon />
@@ -57,7 +57,7 @@ export default function BrittcoFooter() {
               href="https://twitter.com/brittcoconsulting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 backdrop-blur transition-colors hover:bg-white/20"
+              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
               aria-label="X (Twitter)"
             >
               <XIcon />
@@ -66,7 +66,7 @@ export default function BrittcoFooter() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 backdrop-blur transition-colors hover:bg-white/20"
+              className="flex h-12 w-12 items-center justify-center rounded-md bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
               aria-label="Facebook"
             >
               <FacebookIcon />
