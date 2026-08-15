@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Ken Gooz Brand Colors */
+  --kengooz-beige: #D4B896;
+  --kengooz-navy: #1a2b4a;
+  --kengooz-maroon: #8B4545;
+  
+  /* Mainstreet Global Brand Colors */
+  --mainstreet-blue: #2c5f8d;
+  --mainstreet-light-blue: #5a9bd5;
+  --mainstreet-gray: #e8eaf0;
+  
+  /* Brittco Brand Colors */
+  --brittco-red: #d32f2f;
+  --brittco-black: #0a0a0a;
+  --brittco-dark-gray: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Ken Gooz */
+  --color-kengooz-beige: var(--kengooz-beige);
+  --color-kengooz-navy: var(--kengooz-navy);
+  --color-kengooz-maroon: var(--kengooz-maroon);
+  
+  /* Mainstreet */
+  --color-mainstreet-blue: var(--mainstreet-blue);
+  --color-mainstreet-light-blue: var(--mainstreet-light-blue);
+  --color-mainstreet-gray: var(--mainstreet-gray);
+  
+  /* Brittco */
+  --color-brittco-red: var(--brittco-red);
+  --color-brittco-black: var(--brittco-black);
+  --color-brittco-dark-gray: var(--brittco-dark-gray);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
+}

@@ -1,0 +1,14 @@
+node_modules
+.next/
+out/
+
+# Keep environment variables out of version control
+.env
+.env.local
+
+# Prisma generated client
+/lib/generated/prisma
+
+# OS
+.DS_Store
+Thumbs.db
